@@ -1,0 +1,186 @@
+@charset "UTF-8";
+/* ベーススタイル */
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Georgia', serif; /* 柔らかい印象のフォント */
+    background: #fdf3e7; /* ベージュ系の背景色 */
+    color: #333;
+    box-sizing: border-box;
+  }
+  
+  a {
+    text-decoration: none;
+    color: #0066cc;
+  }
+  
+  a:hover {
+    text-decoration: underline;
+  }
+  
+  
+  #btn-open,
+  #btn-close {
+    position: fixed;
+    top: 0;
+    right: 0;
+    width: 40px;
+    height: 40px;
+    background: #000;
+    color: #FFF;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 100;
+  }
+  
+  #btn-close {
+    z-index: 300;
+  }
+  
+  #menu {
+    background: #000;
+    position: fixed;
+    top: 0;
+    right: 0;
+    width: 100%;
+    height: 100vh;
+    z-index: 200;
+    visibility: hidden;
+    opacity: 0;
+  }
+  
+  #menu ul {
+    list-style: none;
+    padding: 1rem 0;
+  }
+  
+  #menu li {
+    text-align: center;
+    padding: 1rem 0;
+    opacity: 0;
+  }
+  
+  #menu a {
+    color: #FFF;
+    text-decoration: none;
+    transition: color .5s;
+  }
+  
+  #menu a:hover {
+    color: #666;
+  }
+  /* ヘッダーセクション */
+  .header {
+    background-image: url('images/main.PNG');
+    background-size: cover;
+    background-position: center;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    color: #333;
+    position: relative;
+    top: 20px;
+    z-index: 10;
+  }
+  
+  .header-content {
+    padding: 20px 40px;
+    border-radius: 10px;
+    max-width: 700px;
+    position: relative;
+    top: -150px;
+    z-index: 10;
+  }
+  
+  .header h1 {
+    font-size: 2.5em;
+    margin-bottom: 20px;
+    font-weight: bold;
+  }
+  
+  .header p {
+    margin-bottom: 30px;
+  }
+  
+  .btn {
+    display: inline-block;
+    padding: 10px 20px;
+    background: #0066cc;
+    color: white;
+    border-radius: 50px;
+    text-decoration: none;
+    font-size: 16px;
+    transition: background 0.3s ease;
+  }
+  
+  .btn:hover {
+    background: #005bb5;
+  }
+  
+  /* 花の装飾 */
+  .flower-left {
+    position: absolute;
+    bottom: 30px;
+    left: 10px;
+    width: 400px; /* サイズ調整 */
+  }
+  
+  .flower-right {
+    position: absolute;
+    bottom: 30px;
+    right: 10px;
+    width: 400px; /* サイズ調整 */
+  }
+ /* キャラクターセクション */
+ #characters {
+    max-width: 900px;
+    margin: 0 auto;
+    text-align: center;
+  }
+  
+  #characters h1 {
+    margin-bottom: 30px;
+    font-size: 2.5em;
+    color: #333;
+  }
+  
+  .character {
+    display: flex;
+    align-items: center;
+    margin-bottom: 40px;
+    background: #fff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  }
+  
+  .character img {
+    width: 150px;
+    height: auto;
+    border-radius: 10px;
+    margin-right: 20px;
+  }
+  
+  .character .info {
+    text-align: left;
+  }
+  
+  .character .info h2 {
+    margin-bottom: 10px;
+    font-size: 1.5em;
+    color: #0066cc;
+  }
+  
+  /* フッター */
+  footer {
+    text-align: center;
+    padding: 10px;
+    background: #333;
+    color: #fff;
+    margin-top: 20px;
+  }
